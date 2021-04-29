@@ -1,0 +1,162 @@
+Linux
+1. Create `linux_lecture` directory and notes.txt file
+
+pasha@pasha-VirtualBox:~$ mkdir linux_lecture
+pasha@pasha-VirtualBox:~$ touch notes.txt
+
+2. Copy notes.txt file to linux_lecture directory
+
+pasha@pasha-VirtualBox:~$ cp notes.txt linux_lecture
+
+3. List the files in the current directory, in “long listing format”.
+
+pasha@pasha-VirtualBox:~$ ls -l
+total 56
+drwxrwxrwx  3 pasha pasha 4096 лют 21 18:07 cursor
+drwxrwxr-x  3 pasha pasha 4096 лют 23 18:47 cursor_git_hw
+drwxrwxr-x  3 pasha pasha 4096 лют 26 20:25 Cursor_HW
+drwxrwxrwx  2 pasha pasha 4096 лют 20 01:10 Desktop
+drwxrwxrwx  2 pasha pasha 4096 лют 20 01:10 Documents
+drwxrwxrwx  2 pasha pasha 4096 лют 21 23:25 Downloads
+drwxrwxr-x  2 pasha pasha 4096 кві 28 16:39 linux_lecture
+drwxrwxrwx  2 pasha pasha 4096 лют 20 01:10 Music
+-rw-rw-r--  1 pasha pasha    0 кві 28 16:37 notes.txt
+drwxrwxrwx  2 pasha pasha 4096 лют 21 17:41 Pictures
+drwxrwxrwx  2 pasha pasha 4096 лют 20 01:10 Public
+drwxr-xr-x 18 pasha pasha 4096 лют 26 15:16 Python-3.9.1
+drwxrwxrwx  4 pasha pasha 4096 лют 26 09:57 snap
+drwxrwxrwx  2 pasha pasha 4096 лют 20 01:10 Templates
+drwxrwxrwx  2 pasha pasha 4096 лют 20 01:10 Videos
+
+4. List all files, including hidden files, in the your home (~) directory, in reverse alphabetical order and long listing format.
+
+pasha@pasha-VirtualBox:~$ ls -lar ~
+total 140
+-rw-rw-r--  1 pasha pasha   169 лют 26 14:52 .wget-hsts
+drwxrwxrwx  2 pasha pasha  4096 лют 20 01:10 Videos
+drwxrwxrwx  2 pasha pasha  4096 лют 20 01:10 Templates
+-rw-rw-r--  1 pasha pasha     0 лют 19 19:04 .sudo_as_admin_successful
+drwxrwxrwx  2 pasha pasha  4096 лют 22 11:36 .ssh
+drwxrwxrwx  4 pasha pasha  4096 лют 26 09:57 snap
+-rw-------  1 pasha pasha     0 лют 26 15:07 .python_history
+drwxr-xr-x 18 pasha pasha  4096 лют 26 15:16 Python-3.9.1
+drwxrwxrwx  2 pasha pasha  4096 лют 20 01:10 Public
+-rw-rw-r--  1 pasha pasha   807 лют 16 17:50 .profile
+drwxrwxrwx  3 pasha pasha  4096 лют 21 23:27 .pki
+drwxrwxrwx  2 pasha pasha  4096 лют 21 17:41 Pictures
+-rw-rw-r--  1 pasha pasha   357 лют 20 01:09 .pam_environment
+-rw-rw-r--  1 pasha pasha     0 кві 28 16:37 notes.txt
+drwxrwxrwx  2 pasha pasha  4096 лют 20 01:10 Music
+drwxrwxrwx  5 pasha pasha  4096 лют 21 23:23 .mozilla
+drwxrwxrwx  3 pasha pasha  4096 лют 16 17:59 .local
+drwxrwxr-x  2 pasha pasha  4096 кві 28 16:39 linux_lecture
+drwxrwxr-x  4 pasha pasha  4096 лют 26 09:58 .java
+drwxrwxrwx  3 pasha pasha  4096 лют 21 23:23 .gnupg
+-rw-rw-r--  1 pasha pasha    63 лют 22 00:35 .gitconfig
+drwxrwxrwx  2 pasha pasha  4096 лют 20 19:32 .emacs.d
+drwxrwxrwx  2 pasha pasha  4096 лют 21 23:25 Downloads
+drwxrwxrwx  2 pasha pasha  4096 лют 20 01:10 Documents
+drwxrwxrwx  2 pasha pasha  4096 лют 20 01:10 Desktop
+drwxrwxr-x  3 pasha pasha  4096 лют 26 20:25 Cursor_HW
+drwxrwxr-x  3 pasha pasha  4096 лют 23 18:47 cursor_git_hw
+drwxrwxrwx  3 pasha pasha  4096 лют 21 18:07 cursor
+drwxrwxrwx 19 pasha pasha  4096 лют 26 09:57 .config
+drwxrwxrwx 22 pasha pasha  4096 лют 26 15:39 .cache
+-rw-rw-r--  1 pasha pasha  3771 лют 16 17:50 .bashrc
+-rw-rw-r--  1 pasha pasha   220 лют 16 17:50 .bash_logout
+-rw-rw-r--  1 pasha pasha 13772 лют 27 14:59 .bash_history
+drwxr-xr-x  3 root  root   4096 лют 16 17:50 ..
+drwxr-xr-x 25 pasha pasha  4096 кві 28 16:38 .
+
+5*. Rename the file notes.txt to new_notes.txt
+Hint: Renaming is done using the same command as moving.
+
+pasha@pasha-VirtualBox:~$ mv notes.txt new_notes.txt
+
+6. Remove the files linux_lecture/notes.txt and new_notes.txt. Note that your answer must be a single command and not multiple commands.
+Hint: Many commands can accept more than one parameter.
+Create homework.sh file under linux_lecture directory
+
+pasha@pasha-VirtualBox:~$ rm linux_lecture/notes.txt new_notes.txt
+pasha@pasha-VirtualBox:~$ touch linux_lecture/homework.sh
+
+
+7*. Set the file homework.sh to have a last-modified date of January 1, 2020, 4:15am.
+Hint: The man page for the proper command describes the timestamp 'STAMP' format to use. Look for this!
+Also note: Linux is case-sensitive when you are specifying file or directory names.
+You can use a * (asterisk) as a “wild-card” character to specify a group of files.
+For example, *foo means all files whose names end with foo, and foo* means all files whose names begin with foo.
+You can use a wildcard in the middle of a file name, such as foo*bar for all files that start with foo and end with bar.
+Create hw.sh, hw1.sh, hw2.sh, hw1.txt under the linux_lecture directory
+
+pasha@pasha-VirtualBox:~$ touch linux_lecture/homework.sh -d 'Jan 1 2020 4:15 am'
+pasha@pasha-VirtualBox:~$ cd linux_lecture
+pasha@pasha-VirtualBox:~/linux_lecture$ touch hw.sh hw1.sh hw2.sh hw1.txt
+
+8. Find all the files only with the extension .txt in the current directory.
+
+pasha@pasha-VirtualBox:~/linux_lecture$ find *.txt
+hw1.txt
+
+9. Copy all the text files (files whose names end with .txt) from the current folder to the new directory `lecture_new`
+
+pasha@pasha-VirtualBox:~/linux_lecture$ mkdir lecture_new
+pasha@pasha-VirtualBox:~/linux_lecture$ cp *.txt lecture_new/
+
+10. Write `echo 'linux_lecture'` to the homework.sh file by using echo.
+
+pasha@pasha-VirtualBox:~/linux_lecture$ echo "echo 'linux_lecture'" > homework.sh
+
+11. Display the contents of homework.sh
+
+pasha@pasha-VirtualBox:~/linux_lecture$ cat homework.sh
+echo 'linux_lecture'
+
+12. Change the permissions to just write for current user and try to Display contents again.
+
+pasha@pasha-VirtualBox:~/linux_lecture$ chmod 064 homework.sh
+pasha@pasha-VirtualBox:~/linux_lecture$ cat homework.sh
+cat: homework.sh: Permission denied
+
+13. Change the permission to rwx for current user only and try again.
+
+pasha@pasha-VirtualBox:~/linux_lecture$ chmod 764 homework.sh
+pasha@pasha-VirtualBox:~/linux_lecture$ cat homework.sh
+echo 'linux_lecture'
+
+13a. Execute the homework.sh
+
+pasha@pasha-VirtualBox:~/linux_lecture$ ./homework.sh
+linux_lecture
+
+14. Write from 1 to 10 in each line in homework.sh by using text reader.
+🔍 Self Discovery: The head and tail commands output only the first or last few lines (respectively) of a file to the terminal.
+
+15. Display only the first 7 lines of the file homework.sh from the current directory on the terminal.
+
+pasha@pasha-VirtualBox:~/linux_lecture$ cat '#homework.sh#'
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+16*. Create notes.sh with `ls` and make it executable
+
+pasha@pasha-VirtualBox:~/linux_lecture$ touch notes.sh
+pasha@pasha-VirtualBox:~/linux_lecture$ echo 'ls' > notes.sh
+pasha@pasha-VirtualBox:~/linux_lecture$ ./notes.sh
+bash: ./notes.sh: Permission denied
+
+17*. Execute notes.sh
+
+pasha@pasha-VirtualBox:~/linux_lecture$ chmod 764 notes.sh
+pasha@pasha-VirtualBox:~/linux_lecture$ ./notes.sh
+homework.sh   hw1.sh	 hw1.txt   hw2.sh   hw.sh   lecture_new   notes.sh
+pasha@pasha-VirtualBox:~/linux_lecture$ ls
+homework.sh   hw1.sh   hw1.txt   hw2.sh   hw.sh   lecture_new   notes.sh
