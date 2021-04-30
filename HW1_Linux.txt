@@ -134,7 +134,7 @@ linux_lecture
 
 15. Display only the first 7 lines of the file homework.sh from the current directory on the terminal.
 
-pasha@pasha-VirtualBox:~/linux_lecture$ cat '#homework.sh#'
+pasha@pasha-VirtualBox:~/linux_lecture$ head -7 '#homework.sh#'
 1
 2
 3
@@ -142,9 +142,6 @@ pasha@pasha-VirtualBox:~/linux_lecture$ cat '#homework.sh#'
 5
 6
 7
-8
-9
-10
 
 16*. Create notes.sh with `ls` and make it executable
 
