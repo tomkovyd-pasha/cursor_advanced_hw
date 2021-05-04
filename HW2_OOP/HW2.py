@@ -43,17 +43,18 @@ class Horse(Animal):
         pass
 
 
-cat_instance, dog_instance, wolf_instance, bird_instance, fox_instance, horse_instance = Cat(), Dog(), Wolf(), Bird(), Fox(), Horse()
-animals_tuple = (cat_instance, dog_instance, wolf_instance, bird_instance, fox_instance, horse_instance)
-cat_instance.meow()
-dog_instance.bark()
-wolf_instance.auf()
-bird_instance.tweet()
-fox_instance.i_dunno()
-horse_instance.hee_haw()
+def first_task():
+    cat_instance, dog_instance, wolf_instance, bird_instance, fox_instance, horse_instance = Cat(), Dog(), Wolf(), Bird(), Fox(), Horse()
+    animals_tuple = (cat_instance, dog_instance, wolf_instance, bird_instance, fox_instance, horse_instance)
+    cat_instance.meow()
+    dog_instance.bark()
+    wolf_instance.auf()
+    bird_instance.tweet()
+    fox_instance.i_dunno()
+    horse_instance.hee_haw()
 
-for i in animals_tuple:
-    print(f'{i} is instance of Animal class - {isinstance(i, Animal)}')
+    for i in animals_tuple:
+        print(f'{i} is instance of Animal class - {isinstance(i, Animal)}')
 
 
 # 1.a. Create a new class Human and use multiple inheritance to create Centaur class,
@@ -78,9 +79,10 @@ class Centaur(Human, Horse):
         pass
 
 
-centaur_instance = Centaur()
-centaur_instance.eat()
-centaur_instance.archery()
+def second_task():
+    centaur_instance = Centaur()
+    centaur_instance.eat()
+    centaur_instance.archery()
 
 # 2. Create two classes: Person, Cell Phone, one for composition, another one for aggregation.
 #   a.
@@ -125,10 +127,11 @@ class Profile:
         return f'Profile{self.name, self.last_name, self.phone_number, self.address, self.email, self.birthday, self.age, self.sex}'
 
 
-profile_instance_0 = Profile('a', 'b', 25, 'add', 'email', '01-01-1990', 24, 1)
-print(profile_instance_0)
-profile_instance_1 = eval(profile_instance_0.__repr__())
-print(profile_instance_1)
+def third_task():
+    profile_instance_0 = Profile('a', 'b', 25, 'add', 'email', '01-01-1990', 24, 1)
+    print(profile_instance_0)
+    profile_instance_1 = eval(profile_instance_0.__repr__())
+    print(profile_instance_1)
 
 
 # 4.* Create an interface for the Laptop with the next methods: Screen, Keyboard, Touchpad, WebCam, Ports, Dynamics
@@ -181,3 +184,9 @@ class HPLaptop(Laptop):
 
     def dynamics(self):
         return f'Dynamics count - {self.dynamics_count}'
+
+
+if __name__ == '__main__':
+    first_task()
+    second_task()
+    third_task()
