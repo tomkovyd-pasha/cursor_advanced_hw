@@ -101,11 +101,3 @@ if __name__ == '__main__':
                 person_instance_0.buy_house(i)
 
         time.sleep(3)
-
-
-
-
-
-
-
-
