@@ -1,18 +1,18 @@
-import house_task
-import realtor_task
-import person_task
+import House
+import Realtor
+import Person
 import time
 import random
 
 
 if __name__ == '__main__':
-    house_instance_0 = house_task.House(30000, 75)
-    house_instance_1 = house_task.SmallHouse(25000, 35)
-    house_instance_2 = house_task.SmallHouse(27000)
-    house_instance_3 = house_task.SmallHouse(25500)
+    house_instance_0 = House.House(30000, 75)
+    house_instance_1 = House.SmallHouse(25000, 35)
+    house_instance_2 = House.SmallHouse(27000)
+    house_instance_3 = House.SmallHouse(25500)
 
-    person_instance_0 = person_task.Person('John', 25, 20000, [house_instance_2])
-    realtor_instance = realtor_task.Realtor('Ben', 0.15, [house_instance_0, house_instance_1, house_instance_3])
+    person_instance_0 = Person.Person('John', 25, 20000, [house_instance_2])
+    realtor_instance = Realtor.Realtor('Ben', 0.15, [house_instance_0, house_instance_1, house_instance_3])
 
     current_count_of_houses_in_property = len(person_instance_0.houses)
     while len(person_instance_0.houses) < current_count_of_houses_in_property + 1:
